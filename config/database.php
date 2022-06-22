@@ -73,9 +73,12 @@ return [
             'password' => env('DB_PASSWORD', ''),
             'charset' => 'utf8',
             'prefix' => '',
+            'collation' => 'utf8_general_ci',
             'prefix_indexes' => true,
             'search_path' => 'public',
             'sslmode' => 'prefer',
+            'engine' => null,
+            'strict' => true
         ],
 
         'sqlsrv' => [
