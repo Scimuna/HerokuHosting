@@ -1,0 +1,54 @@
+#background-image{
+        background-image: url(../images/background.jpg);
+        background-size:cover;
+        min-height: auto;
+        background-repeat:no-repeat;
+        background-attachment: fixed;
+
+}
+.form-div{
+
+    background-color:#eaebef;
+    box-shadow:3px 3px 3px 3px #A8876B;
+    padding:20px;
+    border-radius:3px ;
+    min-height:350px;
+}
+
+#klipboard{
+    display:flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    min-height: 250px;
+}
+
+#writeup{
+    font-size: 50px;
+    font-weight:bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgba(255,255,255, 0.1);
+    border-radius: 10px;
+}
+
+div{
+    box-sizing: border-box;
+}
+
+.alert-danger,.alert-success,alert-warning{
+
+    width:50%;
+}
+
+
+@media only screen and (max-width: 600px) {
+    #writeup{
+        font-size: 30px;
+        font-weight:bold;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        background-color: rgba(255,255,255, 0.1);
+        border-radius: 10px;
+    }
+  }
+
+
