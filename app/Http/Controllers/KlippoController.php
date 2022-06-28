@@ -67,6 +67,10 @@ class KlippoController extends Controller
         // $document=$documentName[1];
         $anotherName = "Klipo" . rand(0, 9) . Str::random(9) . '.' . pathinfo($file, PATHINFO_EXTENSION);
         // dd($anotherName);
+        if(empty($file)){
+                abort(404);
+        }else{
         return response()->download($file, $anotherName);
+        }
     }
 }
